@@ -44,6 +44,7 @@ bin/
 [Rr]elease*/
 
 _Resharper*/
+_ReSharper*/
 _ReSharper.*
 *.resharper
 *.resharper.user
