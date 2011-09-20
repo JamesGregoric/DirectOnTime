@@ -46,6 +46,7 @@ bin/
 _Resharper*/
 _ReSharper*/
 _ReSharper.*
+_ReSharper.*/
 *.resharper
 *.resharper.user
 *.dotCover
