@@ -41,6 +41,18 @@
     <Reference Include="Magnum">
       <HintPath>..\..\lib\Magnum\net-4.0\Magnum.dll</HintPath>
     </Reference>
+    <Reference Include="MassTransit, Version=2.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\MassTransit\MassTransit.dll</HintPath>
+    </Reference>
+    <Reference Include="MassTransit.NHibernateIntegration, Version=2.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\MassTransit\MassTransit.NHibernateIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="MassTransit.StructureMapIntegration, Version=2.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\MassTransit\MassTransit.StructureMapIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="MassTransit.Transports.RabbitMq, Version=2.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\MassTransit\MassTransit.Transports.RabbitMq.dll</HintPath>
+    </Reference>
     <Reference Include="StructureMap">
       <HintPath>..\..\lib\StructureMap\StructureMap.dll</HintPath>
     </Reference>
@@ -57,24 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\MassTransit\src\Containers\MassTransit.StructureMapIntegration\MassTransit.StructureMapIntegration.csproj">
-      <Project>{F5E67502-2B30-484C-88C3-97710291F5AA}</Project>
-      <Name>MassTransit.StructureMapIntegration</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\MassTransit\src\MassTransit\MassTransit.csproj">
-      <Project>{6EFD69FC-CBCC-4F85-AEE0-EFBA73F4D273}</Project>
-      <Name>MassTransit</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\MassTransit\src\Persistence\MassTransit.NHibernateIntegration\MassTransit.NHibernateIntegration.csproj">
-      <Project>{073A90FD-9A3E-4704-B3B5-6D8A9F4B442E}</Project>
-      <Name>MassTransit.NHibernateIntegration</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\MassTransit\src\Transports\MassTransit.Transports.RabbitMq\MassTransit.Transports.RabbitMq.csproj">
-      <Project>{6C7149D7-4D97-45DF-A05D-61EC7374491D}</Project>
-      <Name>MassTransit.Transports.RabbitMq</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
